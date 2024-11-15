@@ -1,0 +1,21 @@
+{
+  "text.config.torilhos-addon.title": "Torilhos Addon Config",
+  "text.config.torilhos-addon.option.enableHoldToSwing": "Hold to Swing",
+  "text.config.torilhos-addon.option.enableFullBright": "Full Bright",
+  "text.config.torilhos-addon.option.enableNightVision": "Night Vision",
+  "text.config.torilhos-addon.option.disableFrontViewPerspective": "Disable Front View Perspective",
+  "text.config.torilhos-addon.option.showEventBossTracker": "Event Boss Tracker",
+  "text.config.torilhos-addon.option.showAbilityCooldown": "Ability Cooldown Indicator",
+  "text.config.torilhos-addon.option.showHealthBar": "Health Bar",
+  "text.config.torilhos-addon.option.showWeaponRange": "Weapon Range",
+  "text.config.torilhos-addon.option.showAbilityRange": "Ability Range",
+  "text.config-screen.torilhos-addon.button.done": "Done",
+  "text.quick-boss-teleport-screen.torilhos-addon.label.teleportTo": "Teleport to:",
+  "text.quick-boss-teleport-screen.torilhos-addon.label.noPlayersFound": "No players found...",
+  "text.quick-boss-teleport-screen.torilhos-addon.button.cancel": "Cancel",
+  "text.torilhos-addon.bossTrackerUpdated": "Boss Tracker Updated",
+  "key.torilhos-addon.openConfigMenu": "Open Config Menu",
+  "key.torilhos-addon.nexus": "Nexus",
+  "key.torilhos-addon.openQuickBossTeleport": "Open Quick Boss Teleport",
+  "category.torilhos-addon": "Torilhos Addon"
+}

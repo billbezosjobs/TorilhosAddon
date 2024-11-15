@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "mdsol.torilhosaddon.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ClientPlayNetworkHandlerMixin",
+    "GameOptionsMixin",
+    "HandledScreenMixin",
+    "MinecraftClientMixin",
+    "SimpleOptionMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
