@@ -11,6 +11,24 @@ import net.minecraft.util.Hand;
 import org.jetbrains.annotations.NotNull;
 import org.lwjgl.glfw.GLFW;
 
+public class HealthBarFeature extends BaseToggleableFeature {
+
+    public HealthBarFeature() {
+        super(TorilhosAddon.CONFIG.keys.showHealthBar);
+        WorldRenderEvents.LAST.register(this::onWorldRender);
+    }
+
+    public void onWorldRender(WorldRenderContext context) {
+        if (!isEnabled()) {
+            return;
+        }
+
+        if (client.player == null) {
+            return;
+        }
+
+        var healthPercentage = client.player.getHealth() / client.player.getMaxHealth();
+        
 public class NexusKeyFeature extends BaseFeature {
 
     private static final KeyBinding NEXUS_KEY = new KeyBinding(
@@ -27,7 +45,7 @@ public class NexusKeyFeature extends BaseFeature {
     }
 
     private void tick(@NotNull MinecraftClient client) {
-        if (!NEXUS_KEY.wasPressed()
+        if (healthPercentage <= 0.4f()
                 || NEXUS_KEY.isUnbound()
                 || client.player == null
                 || client.interactionManager == null
@@ -51,5 +69,7 @@ public class NexusKeyFeature extends BaseFeature {
 
         client.player.getInventory().selectedSlot = slot;
         client.interactionManager.interactItem(client.player, Hand.MAIN_HAND);
+
+    
     }
 }
